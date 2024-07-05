@@ -327,13 +327,13 @@ def calculate_3d_points(file1, file2, fx1, fx2, baseline):
 
         fig = plt.figure()
         ax = fig.add_subplot(111, projection='3d')
-        ax.scatter(X, Y, Z, label='3D Points')
+        ax.scatter(X, Z, Y, label='3D Points')
         ax.set_xlabel('X axis')
-        ax.set_ylabel('Y axis')
-        ax.set_zlabel('Z axis')
+        ax.set_ylabel('Z axis')
+        ax.set_zlabel('Y axis')
         ax.set_xlim(0, 640)  # 设置X轴范围
-        ax.set_ylim(0, 320)  # 设置Y轴范围
-        ax.set_zlim(0, 1000)  # 设置Z轴范围
+        ax.set_ylim(0, 1000)  # 设置Z轴范围
+        ax.set_zlim(0, 320)  # 设置Y轴范围
         plt.legend()
         plt.show()
     else:
