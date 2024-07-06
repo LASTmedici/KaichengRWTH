@@ -4,3 +4,4 @@ data_process_zkc:从tmdat数据提取出TD的npy矩阵和彩色通道的bmp图�
 imgg23：基于D435i、GLIP、whisper的实时目标检测和绝对坐标位置计算
 multinote_10_noimg5_0614_1:Davis346与GLIP、Kalman滤波结合的实时目标追踪
 multinote_10_nomig5_local_0615_1:Davis346与GLIP、Kalman滤波结合的离线目标追踪（处理aedat4文件）
+由于bert-base-uncased与glip的tiny模型的参数过大，需要在本地部署时自行下载，其余内容均已打包在这个压缩包中。其中主要执行代码分为两个部分，在主机运行的glip、whisper及语言翻译等用于目标检测的内容储存于glip_demo.py，配置环境后可以在Ubuntu中运行。
